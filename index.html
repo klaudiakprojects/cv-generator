@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+
+</head>
+
+
+<body>
+    <div id="container">
+        <h1>CV GENERATOR</h1>
+        <div id="contact-div">
+            <h3 class="contact-info-header">CONTACT INFO</h3>
+            <label for="first-name">First name: </label>
+            <input class="first-name">
+            <label for="second-name">Second name: </label>
+            <input class="second-name">
+            <label for="E-mail">E-mail: </label>
+            <input type="email" class="e-mail">
+            <label for="phone-number">Phone number: </label>
+            <input type="number" class="phone-number">
+            <label for="label-photo">Upload your photo:</label>
+            <input type="file" id="photo" name="photo">
+        </div>
+        <div id="experiences">
+            <div id="experience-div" class="new-experience-div">
+                <h3 class="experience-header">EXPERIENCE</h3>
+                <label for="position-name">Position name: </label>
+                <input class="position-name">
+                <label for="date-of-employment">Date of employment: </label>
+                <input class="date-of-employment">
+                <label for="company-name">Company name: </label>
+                <input class="company-name">
+                <div id="all-responsibilities">
+                    <div class="responsibility-input-div">
+                        <label for="responsibilities">Responsibilities: </label>
+                        <input class="responsibilities">
+                        <button class="add-more-responsibilities">Add more responsibilities</button>
+                        <button class="btn-experience">ADD MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="all-education">
+            <div class="education-div">
+                <h3 class="education-header">EDUCATION</h3>
+                <label for="uni-name" class="label-uni-name">University name:</label>
+                <input class="uni-name">
+                <label for="date-of-uni" class="label-date-of-uni">Date of attending university:</label>
+                <input class="uni-date">
+                <label for="field-of-study" class="label-field-of-study">Field of study:</label>
+                <input class="field-of-study">
+                <button class="btn-education">ADD MORE</button>
+            </div>
+        </div>
+        <div id="languages-div">
+            <h3 class="languages-header">LANGUAGES:</h3>
+            <div class="language-container">
+                <input class="language-choice">
+                <select name="language-levels" class="language-levels">
+                    <option value="a1" class="a1">A1</option>
+                    <option value="a2" class="a2">A2</option>
+                    <option value="b1" class="b1">B1</option>
+                    <option value="b2" class="b2">B2</option>
+                    <option value="c1" class="c1">C1</option>
+                    <option value="c2" class="c2">C2</option>
+                </select>
+                <button id="languages-button">ADD LANGUAGE</button>
+            </div>
+        </div>
+        <button id="generate-pdf">GENERATE PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

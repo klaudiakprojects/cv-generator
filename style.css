@@ -1,0 +1,249 @@
+@page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;
+    }
+  }
+
+body {
+    background-color: #fdffeb;
+    font-family: 'Poppins', sans-serif;
+}
+#container {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: none;
+    padding: 2rem;
+    background-color: #f7dba2;
+    border-radius: 10px;
+}
+
+.new-education-div {
+  border: solid;
+  border-color: #fffbe2;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background-color: #fffbe2;
+    border-radius:5px;
+    padding: 8px;
+    border:none;
+}
+
+.new-experience-div {
+    border: solid;
+    border-color: #fffbe2;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.education-div {
+  border: solid;
+  border-color: #fffbe2;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#language-levels {
+  background-color: #fdffeb;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#languages-button {
+  background-color: #fdffeb;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.delete-button {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fdffeb;
+}
+
+.btn-experience, .btn-education {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fdffeb;
+    margin-top: 10px;
+
+}
+
+.responsibility-input-div {
+  margin-top: 10px;
+
+}
+
+.add-more-responsibilities {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fdffeb;
+  height: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#experience-div {
+    margin-bottom: 10px;
+}
+
+#generate-pdf {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #fdffeb;
+}
+
+h1 {
+    text-align: center;
+    background-color: #fdffeb;
+    border-radius: 10px;
+}
+
+
+
+#education-div {
+    margin-bottom: 10px;
+}
+
+/* .first-name-cv, .second-name-cv {
+   float:left; 
+   display:inline; 
+}
+
+.second-name-cv:after {
+    content: "";
+    display: block;
+} */
+
+
+/* Set some basic styles for the CV container */
+.container-cv {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  /* Style the name and initials */
+  .first-name-cv {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .second-name-cv {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the email and phone number */
+  .email-cv, .phone-number-cv {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the experience section */
+  .experience-container-cv {
+    margin-top: 20px;
+  }
+  
+  .position-name-cv {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .date-of-employment-cv {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .company-name-cv {
+    margin-bottom: 5px;
+  }
+  
+  .responsibilities-cv {
+    margin-top: 10px;
+  }
+  
+  /* Style the education section */
+  .education-container-cv {
+    margin-top: 20px;
+  }
+  
+  .university-name-cv {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .university-date-cv {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .field-of-study-cv {
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the language section */
+  .languages-cv {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .university-name-cv::after,
+  .university-date-cv::after,
+  .position-name-cv:after,
+  .date-of-employment-cv:after,
+  .company-name-cv:after {
+    content: "\A";
+    white-space: pre;
+  }
+  
